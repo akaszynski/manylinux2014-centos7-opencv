@@ -8,6 +8,10 @@ on:
     branches:
       - "main"
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build_and_push:
     name: Build and possibly Push Docker image to GitHub Packages
