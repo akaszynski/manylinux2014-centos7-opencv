@@ -2,9 +2,9 @@
 
 # Build and install OpenCV from source on CentOS 7 for graph-cut-ransac and MAGSAC++
 
-# install dependencies for opencv
+# install dependencies for opencv and magsac
 yum update -y
-yum install -y cmake3 eigen3-devel
+yum install -y cmake3 eigen3-devel gflags-devel
 yum clean all && rm -rf /var/cache/yum  # clean cache
 
 # Download opencv
