@@ -1,11 +1,11 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v5.0.0
+  rev: v6.0.0
   hooks:
   - id: trailing-whitespace
 
 # validate GitHub workflow files
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.29.4
+  rev: 0.36.1
   hooks:
     - id: check-github-workflows
